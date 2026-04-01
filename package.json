@@ -1,0 +1,36 @@
+{
+  "name": "bchain-emguard",
+  "version": "1.0.0",
+  "description": "Blockchain-Anchored Multi-Sensor Emission Monitoring with LLM Notification",
+  "scripts": {
+    "compile":       "npx hardhat compile",
+    "test":          "npx hardhat test",
+    "deploy:local":  "npx hardhat run scripts/deploy.js --network hardhat",
+    "deploy:besu":   "npx hardhat run scripts/deploy.js --network besu_local",
+    "gas:measure":   "bash scripts/run_gas_50.sh",
+    "simulate":      "python3 ml/emission_sim.py",
+    "simulate:llm":  "python3 ml/llm_notification_sim.py",
+    "clean":         "npx hardhat clean"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^4.0.0",
+    "hardhat": "^2.22.17",
+    "hardhat-gas-reporter": "^1.0.10"
+  },
+  "keywords": [
+    "blockchain",
+    "emission-monitoring",
+    "IoT",
+    "smart-contracts",
+    "LLM",
+    "environmental-compliance",
+    "Solidity",
+    "Hyperledger-Besu"
+  ],
+  "author": "Mujahid Ullah Khan Afridi <mujahida@nmsu.edu>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MujahidUllahKhan/BChain-EmGuard"
+  }
+}
